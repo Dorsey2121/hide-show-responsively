@@ -1,0 +1,82 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 20em) {
+
+  img:nth-child(2),
+  img:nth-child(4) {
+    display: none;
+  }
+
+  img:nth-child(1),
+  img:nth-child(3) {
+    width: 100%;
+    display: block;
+    padding: .2rem;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  img:nth-child(1),
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 50%;
+    float: left;
+    display: block;
+    padding: .2rem;
+  }
+
+}
+
+@media only screen and (min-width: 40em) {
+
+  img:nth-child(1) {
+    display: none;
+  }
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 33%;
+    float: left;
+    display: block;
+    padding: .2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:nth-child(1),
+  img:nth-child(2),
+  img:nth-child(3),
+  img:nth-child(4) {
+    width: 25%;
+    float: left;
+    display: block;
+    padding: .2rem;
+  }
+
+}
